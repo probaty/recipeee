@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @layer components {
   .header {
     @apply sticky h-14 flex items-center bg-bone text-primary text-3xl justify-center;
     font-family: "Courgette", cursive;
+  }
+  .menu {
+    @apply h-7 w-7 absolute right-4 outline-none;
   }
 }

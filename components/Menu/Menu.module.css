@@ -1,0 +1,23 @@
+@layer components {
+  .overlay {
+    @apply w-screen h-screen fixed top-0 left-0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .menu {
+    @apply bg-white rounded-xl mx-auto fixed overflow-scroll;
+    width: 88vw;
+    top: 15vh;
+    right: 6vw;
+    min-height: 70vh;
+    font-family: "Georama", sans-serif;
+  }
+  .user {
+    @apply flex items-center pl-6 border-b-2 box-border border-bone pb-2 text-lg;
+  }
+  .close {
+    @apply flex justify-end items-center mt-2 w-full pr-4;
+  }
+  .imageField {
+    @apply mr-2 p-1 rounded-full inline-flex items-center justify-center bg-bone w-10 h-10;
+  }
+}
