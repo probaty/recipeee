@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./Menu.module.css";
 import cn from "classnames";
 
@@ -33,6 +32,7 @@ export function Menu({
               e.stopPropagation();
               changeVisibility(false);
             }}
+            className={styles.button}
           >
             <i className="fas fa-times text-3xl"></i>
           </button>

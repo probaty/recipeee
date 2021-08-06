@@ -17,6 +17,11 @@
   .close {
     @apply flex justify-end items-center mt-2 w-full pr-4;
   }
+  .button {
+    @apply outline-none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+  }
   .imageField {
     @apply mr-2 p-1 rounded-full inline-flex items-center justify-center bg-bone w-10 h-10;
   }
