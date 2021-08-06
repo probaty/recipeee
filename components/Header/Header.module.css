@@ -1,6 +1,6 @@
 @layer components {
   .header {
-    @apply sticky h-14 flex items-center bg-bone text-primary text-2xl justify-center;
+    @apply sticky h-14 flex items-center bg-bone text-primary text-3xl justify-center;
     font-family: "Courgette", cursive;
   }
   .menu {

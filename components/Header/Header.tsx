@@ -21,7 +21,7 @@ export function Header({ userName }: HeaderProps): JSX.Element {
   };
   return (
     <header className={styles.header}>
-      <p>Reacipeee</p>
+      <p>Recipeee</p>
       <button className={styles.menu} onClick={openMenu}>
         <i
           className="fas fa-ellipsis-v transition-all"
