@@ -1,8 +1,4 @@
 @layer components {
-  .overlay {
-    @apply w-screen h-screen fixed top-0 left-0;
-    background: rgba(0, 0, 0, 0.5);
-  }
   .menu {
     @apply bg-white rounded-xl mx-auto fixed overflow-scroll;
     width: 88vw;
@@ -10,6 +6,7 @@
     right: 6vw;
     min-height: 70vh;
     font-family: "Georama", sans-serif;
+    animation: menuOpen 0.1s;
   }
   .user {
     @apply flex items-center pl-6 border-b-2 box-border border-bone pb-2 text-lg;
@@ -24,5 +21,48 @@
   }
   .imageField {
     @apply mr-2 p-1 rounded-full inline-flex items-center justify-center bg-bone w-10 h-10;
+  }
+}
+
+.overlayOpen {
+  animation: overlayOpen 0.1s;
+}
+.overlayClose {
+  animation: overlayClose 0.1s forwards;
+}
+.menuClose {
+  animation: menuClose 0.1s forwards;
+}
+
+@keyframes overlayOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes overlayClose {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes menuOpen {
+  from {
+    transform: translateY(-5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes menuClose {
+  to {
+    transform: translateY(-5%);
+    opacity: 0;
   }
 }

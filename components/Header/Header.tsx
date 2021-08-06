@@ -10,15 +10,22 @@ interface HeaderProps {
 export function Header({ userName }: HeaderProps): JSX.Element {
   const [menuVisibility, setMenuVisibility] = useState<boolean>(false);
   const [closeState, setCloseState] = useState<boolean>(false);
+  const closeMenu = (): void => {
+    setCloseState(true);
+    setTimeout(() => {
+      setMenuVisibility(false);
+    }, 100);
+  };
+  const openMenu = (): void => {
+    setCloseState(false);
+    setMenuVisibility(true);
+  };
   return (
     <header className={styles.header}>
       <p>Reacipeee</p>
-      <button
-        className={styles.menu}
-        onClick={() => setMenuVisibility(!menuVisibility)}
-      >
+      <button className={styles.menu} onClick={openMenu}>
         <i
-          className="fas fa-ellipsis-h transition-all"
+          className="fas fa-ellipsis-v transition-all"
           style={{
             transform: menuVisibility ? "rotate(90deg)" : "",
           }}
@@ -27,7 +34,7 @@ export function Header({ userName }: HeaderProps): JSX.Element {
       {menuVisibility && (
         <Menu
           userName={userName}
-          changeVisibility={setMenuVisibility}
+          changeVisibility={closeMenu}
           closing={closeState}
         />
       )}

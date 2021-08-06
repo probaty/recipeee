@@ -15,16 +15,24 @@ export function Menu({
   return (
     <>
       <div
-        className={cn(styles.overlay, {
-          [styles.overlayClose]: closing === true,
-        })}
+        className={cn(
+          "w-screen h-screen fixed top-0 left-0",
+          styles.overlayOpen,
+          {
+            [styles.overlayClose]: closing === true,
+          }
+        )}
+        style={{
+          background: "rgba(0, 0, 0, 0.5)",
+        }}
         onClick={(e) => {
           e.stopPropagation();
           changeVisibility(false);
         }}
       ></div>
       <div
-        className={cn(styles.menu, { [styles.menuClose]: closing === true })}
+        // className={cn(styles.menu, { [styles.menuClose]: closing === true })}
+        className={`${styles.menu} ${closing ? styles.menuClose : ""}`}
       >
         <div className={styles.close}>
           <button
