@@ -1,5 +1,4 @@
 import styles from "./Header.module.css";
-import Image from "next/image";
 import { useState } from "react";
 import { Menu } from "../Menu/Menu";
 

@@ -1,5 +1,6 @@
 import styles from "./Menu.module.css";
 import cn from "classnames";
+import { MenuButton } from "../MenuButton/MenuButton";
 
 interface MenuProps {
   userName: string;
@@ -31,8 +32,8 @@ export function Menu({
         }}
       ></div>
       <div
-        // className={cn(styles.menu, { [styles.menuClose]: closing === true })}
-        className={`${styles.menu} ${closing ? styles.menuClose : ""}`}
+        className={cn(styles.menu, { [styles.menuClose]: closing === true })}
+        // className={`${styles.menu} ${closing ? styles.menuClose : ""}`}
       >
         <div className={styles.close}>
           <button
@@ -40,7 +41,6 @@ export function Menu({
               e.stopPropagation();
               changeVisibility(false);
             }}
-            className={styles.button}
           >
             <i className="fas fa-times text-3xl"></i>
           </button>
@@ -51,6 +51,18 @@ export function Menu({
             <i className="fas fa-user"></i>
           </div>
           <div className={styles.userName}>{userName}</div>
+        </div>
+        <div className={styles.links}>
+          <MenuButton
+            href="/"
+            content="Мои рецепты"
+            icon="fas fa-pizza-slice"
+          />
+          <MenuButton href="/" content="Добавить рецепт" icon="fas fa-plus" />
+          <MenuButton href="/" content="Избранное" icon="fas fa-heart" />
+        </div>
+        <div className={styles.logout}>
+          <MenuButton href="/" content="Выйти" icon="fas fa-sign-out-alt" />
         </div>
       </div>
     </>

@@ -1,0 +1,8 @@
+@layer components {
+  .link {
+    @apply text-lg text-primary inline-flex items-center pl-9 py-4 w-full;
+  }
+  .icon {
+    @apply text-xl mr-4;
+  }
+}
