@@ -1,0 +1,8 @@
+@layer components {
+  .toolbar {
+    @apply fixed bottom-0 left-0 w-full bg-bone;
+  }
+  .wrap {
+    @apply flex justify-around items-center;
+  }
+}

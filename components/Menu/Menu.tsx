@@ -1,6 +1,6 @@
 import styles from "./Menu.module.css";
 import cn from "classnames";
-import { MenuButton } from "../MenuButton/MenuButton";
+import { MenuButton } from "../Header/MenuButton/MenuButton";
 
 interface MenuProps {
   userName: string;
@@ -58,7 +58,11 @@ export function Menu({
             content="Мои рецепты"
             icon="fas fa-pizza-slice"
           />
-          <MenuButton href="/" content="Добавить рецепт" icon="fas fa-plus" />
+          <MenuButton
+            href="/add"
+            content="Добавить рецепт"
+            icon="fas fa-plus"
+          />
           <MenuButton href="/" content="Избранное" icon="fas fa-heart" />
         </div>
         <div className={styles.logout}>

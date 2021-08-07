@@ -4,7 +4,9 @@
     font-family: "Courgette", cursive;
   }
   .menu {
-    @apply h-7 w-7 absolute right-4 outline-none text-xl;
+    @apply absolute right-4 outline-none;
     @apply outline-none;
+    line-height: 0;
+    font-size: 1.7rem;
   }
 }

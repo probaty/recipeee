@@ -11,6 +11,9 @@
   .user {
     @apply flex items-center pl-6 border-b-2 box-border border-bone pb-2 text-lg;
   }
+  .userName {
+    @apply text-primary;
+  }
   .close {
     @apply flex justify-end items-center mt-2 w-full pr-4;
   }

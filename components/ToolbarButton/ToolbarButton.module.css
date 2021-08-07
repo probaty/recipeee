@@ -1,0 +1,11 @@
+@layer components {
+  .button {
+    @apply py-2 pt-4 pb-3;
+  }
+  .buttonContent {
+    @apply flex justify-center items-baseline text-lg w-full;
+  }
+  .text {
+    @apply ml-2;
+  }
+}

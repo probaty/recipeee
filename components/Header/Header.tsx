@@ -23,12 +23,7 @@ export function Header({ userName }: HeaderProps): JSX.Element {
     <header className={styles.header}>
       <p>Recipeee</p>
       <button className={styles.menu} onClick={openMenu}>
-        <i
-          className="fas fa-ellipsis-v transition-all"
-          style={{
-            transform: menuVisibility ? "rotate(90deg)" : "",
-          }}
-        ></i>
+        <i className="fas fa-user-circle"></i>
       </button>
       {menuVisibility && (
         <Menu

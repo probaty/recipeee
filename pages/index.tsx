@@ -1,14 +1,6 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Header } from "../components";
+import { Layout } from "../components";
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Create Next App</title>
-      </Head>
-      <Header userName="PIDARAS" />
-    </>
-  );
+  return <Layout title="Главная"></Layout>;
 }
