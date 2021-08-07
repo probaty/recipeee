@@ -1,6 +1,6 @@
 @layer components {
   .menu {
-    @apply bg-white rounded-xl mx-auto absolute;
+    @apply bg-white rounded-xl mx-auto absolute z-10;
     width: 88vw;
     top: 4rem;
     right: 6vw;

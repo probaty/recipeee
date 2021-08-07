@@ -13,9 +13,9 @@ export const Layout: FunctionComponent<LayoutProps> = ({ title, children }) => {
       <Head>
         <title>{title} - Recipee</title>
       </Head>
-      <Header userName="lox)))" />
-      <main>{children}</main>
       <Toolbar />
+      <Header userName="lox)))" />
+      <main className="pb-20">{children}</main>
     </>
   );
 };

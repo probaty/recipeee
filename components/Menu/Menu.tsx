@@ -17,7 +17,7 @@ export function Menu({
     <>
       <div
         className={cn(
-          "w-screen h-screen fixed top-0 left-0",
+          "w-screen h-screen fixed top-0 left-0 z-10",
           styles.overlayOpen,
           {
             [styles.overlayClose]: closing === true,
