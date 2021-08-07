@@ -1,6 +1,6 @@
 import styles from "./Menu.module.css";
 import cn from "classnames";
-import { MenuButton } from "../Header/MenuButton/MenuButton";
+import { MenuButton } from "../MenuButton/MenuButton";
 
 interface MenuProps {
   userName: string;

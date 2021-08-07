@@ -2,7 +2,7 @@
   .menu {
     @apply bg-white rounded-xl mx-auto absolute;
     width: 88vw;
-    top: 15vh;
+    top: 4rem;
     right: 6vw;
     min-height: 70vh;
     font-family: "Comfortaa", sans-serif;
